@@ -90,5 +90,3 @@ def bfspathing(scenario,pos,target):
         steps.append(current_backtrack)
         current_backtrack = prev_mat[current_backtrack[0]][current_backtrack[1]]
     return steps + [pos]
-
-bfspathing(scene,(0,0),(4,4))

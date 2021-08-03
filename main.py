@@ -133,7 +133,7 @@ def trgi_calc():
         player_time = room_delays[player_rooms[i]-1]
         if len(paths[i]):
             there_is_paths = True
-            trgis.append(player_time*10-(len(paths[i])))
+            trgis.append(player_time*10-(len(paths[i])-2))
     return max(trgis)/10 if there_is_paths else 255
 #################### Visualization #############################
 def draw_canvas(gamemap):
